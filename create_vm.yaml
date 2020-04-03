@@ -2,7 +2,7 @@
   vmware_guest:
     validate_certs: no
     datacenter: "{{ datacenter }}"
-    cluster:  "{{ vmware_cluster }}"
+    #cluster:  "{{ vmware_cluster }}"
     datastore: "{{ datastore }}"
     folder: "/{{ cluster_name }}"
     esxi_hostname: 1.1.1.1
