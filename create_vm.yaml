@@ -5,6 +5,7 @@
     cluster:  "{{ vmware_cluster }}"
     datastore: "{{ datastore }}"
     folder: "/{{ cluster_name }}"
+    esxi_hostname: 1.1.1.1
     name: "{{ vm_name_prefix }}{{ idx|int + vm_offset|int }}"
     state: present
     template: "{{ rhcos_template }}"
